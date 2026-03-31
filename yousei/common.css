@@ -1,0 +1,60 @@
+@charset "shift_jis";
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	name : commoon.css
+
+ : :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ********************************************************************************
+ * reset
+ * ******************************************************************************** */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+html {
+	overflow-y:scroll;
+}
+img {
+	border: none;
+}
+a img {
+	border:none;
+	text-decoration:none;
+	outline:0;
+}
+
+/* ********************************************************************************
+ * body
+ * ******************************************************************************** */
+
+body {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro W3";
+	text-align: center; /* for IE6 */
+	color: #ffffff;
+}
+
+ /* ********************************************************************************
+ * container
+ * ******************************************************************************** */
+div#container {
+	width: 768px;
+	height: 840px;
+	margin: 0 auto;
+	background: url(../ds/nintendo_bg.jpg) no-repeat 0 0;
+	position: relative;
+}
+p#bnr {
+	position: absolute;
+	right: 6px;
+	top: 745px;
+}

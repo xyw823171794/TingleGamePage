@@ -1,0 +1,341 @@
+@charset "shift_jis";
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	name : common.css
+
+ : :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ********************************************************************************
+ * ブラウザスタイルの初期化
+ * ******************************************************************************** */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+html {
+	overflow-y:scroll;
+}
+img {
+	border: none;
+}
+a img {
+	border:none;
+	text-decoration:none;
+	outline:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+ul {
+	list-style-type:none;
+}
+
+/* ********************************************************************************
+ * デフォルトスタイル
+ * ******************************************************************************** */
+
+p {
+	color: #ffffff;
+}
+hr {
+	display: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	white-space: nowrap;
+}
+object,
+param {
+	border: 0;
+	vertical-align: bottom;
+}
+input{
+	verticalalign: middle;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+strong {
+	font-weight: bold;
+	text-decoration: none;
+}	
+	
+/* ********************************************************************************
+ * LINK
+ * ******************************************************************************** */
+
+a {
+	overflow: hidden;
+	outline: 0;
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+
+/* ********************************************************************************
+ * 凡庸クラススタイル
+ * ******************************************************************************** */
+
+.clear {
+	display:none;
+}
+.hidden {
+	position: absolute;
+	left: -9999px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.textAlignLeft {
+	text-align: left;
+}
+/* 右へfloat */
+.alignRight {
+	float: right;
+}
+	
+/* 左へfloat */
+.alignLeft {
+	float: left;
+}
+/* floatをクリア　ここから */
+.clearfix:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix { display: inline-block; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End Hides from IE-mac */
+
+/* 右へclear */
+.clearRight {
+	clear: right;
+}
+/* 左へclear */
+.clearLeft {
+	clear: left;
+}
+
+/* floatをクリア　ここまで */
+
+/* ********************************************************************************
+ * フォントサイズ
+ * ******************************************************************************** */
+
+body {
+	font-size: 13px;
+	*font-size: small;
+	*font: x-small;
+}
+table {
+	font-size: inherit;
+	font: 100%;
+}
+select,
+input,
+textarea {
+	font-size: 99%;
+}
+
+/* ********************************************************************************
+ * 基本レイアウト
+ * ******************************************************************************** */
+
+body {
+	font-family:"Hiragino Kaku Gothic Pro","HiraKakuPro-W3","MS UI Gothic","Lucida Grande","MS Gothic";
+	text-align: center; /* for IE6 */
+	background: #fce5ef;
+	color: #000000;
+}
+div#flashcontent {
+	height: 856px;
+	background: url(../images/bg.jpg) no-repeat top center #fce5ef;
+}
+body#nakanaori3 div#flashcontent,
+body#nakanaori4 div#flashcontent {
+	height: 856px;
+	background: url(../images/bg_trip.jpg) no-repeat top center #fce5ef;
+}
+
+#container {
+	margin: 0 auto;
+	width: 800px;
+	height: 856px;
+	position: relative;
+ 	text-align: left;
+}
+h1 {
+	position: absolute;
+	top: 611px;
+	left: 16px;
+	width: 146px;
+	height: 58px;
+}
+#content {
+	width: 800px;
+	height: 596px;
+	position: relative;
+}
+h2 {
+	position: absolute;
+	top: 0;
+	left: 59px;
+	width: 190px;
+	height: 58px;
+}
+p#btnMokuji {
+	position: absolute;
+	top: -20px;
+	left: 278px;
+	width: 94px;
+	height: 55px;
+}
+div#contentInner {
+	width: 682px;
+	height: 455px;
+	position: absolute;
+	top: 70px;
+	left: 59px;
+	position: relative;
+}
+div#contentInner2 {
+	width: 768px;
+	height: 493px;
+	position: absolute;
+	top: 70px;
+	left: 16px;
+	position: relative;
+}
+/* ********************************************************************************
+ * p#btnNext,p#btnBack
+ * ******************************************************************************** */
+p#btnNext {
+	position: absolute;
+	bottom: 21px;
+	right: 0;
+	width: 81px;
+	height: 83px;
+}
+p#btnBack {
+	position: absolute;
+	bottom: 21px;
+	left: 0;
+	width: 81px;
+	height: 83px;
+}
+
+/* ********************************************************************************
+ * #contentBottom
+ * ******************************************************************************** */
+#contentBottom {
+	width: 800px;
+	height:236px;
+	position: relative;
+}
+#news {
+	margin-left: 167px;
+}
+#softDetail {
+	width: 656px;
+	height: 90px;
+	margin-top: 17px;
+	position: relative;
+}
+#cero {
+	position: absolute;
+	top: 19px;
+	right: 22px;
+}
+#mobile {
+	position: absolute;
+	top: 44px;
+	right: 0;
+}
+div#btn {
+	margin-top: 14px;
+}	
+div#btn ul li{
+	display: inline;
+}	
+	
+
+/* ********************************************************************************
+ * #header
+ * ******************************************************************************** */
+
+#header {
+	width: 800px;
+	height: 24px;
+	margin: 0 auto;
+	position: relative;
+}
+#logoNintendo {
+	width: 64px;
+	height: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 16px;
+}
+#logoDs {
+	width: 113px;
+	height: 17px;
+	position: absolute;
+	right: 16px;
+	bottom: 0;
+}
+
+/* ********************************************************************************
+ * #footer
+ * ******************************************************************************** */
+div#footer {
+	width: 100%;
+	background: url(../images/footer_bg.jpg) repeat-x left top #fce5ef;
+}
+div#footer ul.footerNavi  {
+	width: 800px;
+	margin: 0 auto;
+}
+div#footer ul li {
+	display: inline;
+	font-size: 92%;
+	line-height: 1.7;
+}
+div#footer ul li span.current {
+	color: #e2155c;
+}
+div#footer ul li span.current a {
+	color: #e2155c;
+}
+
+div#footer p {
+	padding: 20px 0 30px 0;
+}

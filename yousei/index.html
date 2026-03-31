@@ -1,0 +1,57 @@
+
+
+<HTML LANG="ja">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=shift_jis">
+<META HTTP-EQUIV="content-style-type" CONTENT="text/css">
+<META HTTP-EQUIV="content-script-type" CONTENT="text/javascript">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<TITLE>いろづきTV</TITLE>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        // ???置：自?播放
+        "autoplay": "on",
+        // 允?静音自?播放（?代??器通常要求初始播放必?静音）
+        "unmuteOverlay": "hidden",
+        // ?藏右?菜?中的??（可?）
+        "contextMenu": "off",
+        // ?加?模式
+        "preloader": true
+    };
+</script>
+
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript" SRC="swfobject.js"></SCRIPT>
+<LINK HREF="common.css" REL="stylesheet" TYPE="text/css">
+</HEAD>
+<BODY BGCOLOR="#000000">
+<DIV ID="flashContent">
+<IMG SRC="noscript.jpg" ALT="このページは、JavaScriptを有効にして最新のAdobe Flash Playerをインストールしてご覧ください。また、ニンテンドーDSブラウザー、ニンテンドーDSiブラウザーやWiiのインターネットチャンネルをご利用の方は、恐れ入りますが、パソコンのブラウザでご覧ください。" BORDER="0" USEMAP="#Map">
+<MAP NAME="Map">
+
+	<AREA SHAPE="RECT" COORDS="166,213,353,266" HREF="http://get.adobe.com/jp/flashplayer/" TARGET="_blank">
+</MAP>
+</DIV>
+<!-- // flashContent -->
+<SCRIPT TYPE="text/javascript">
+	var u = navigator.userAgent;
+	if (u.indexOf("Nitro") != -1 || u.indexOf("DSi") != -1 || u.indexOf("Wii") != -1) 
+	{
+	} else {
+		if (swfobject.hasFlashPlayerVersion("8.0.0"))
+		{
+			var flashvars = null;
+			var params = null;
+			var attributes = {
+				bgcolor : "000000",
+				allowFullScreen : "false",
+				allowScriptAccess : "sameDomain",
+				quality : "high"
+			};
+			swfobject.embedSWF("swf/index.swf", "flashContent", "512", "512", "8.0.0", flashvars, params, attributes);
+		}
+	}
+</SCRIPT>
+</BODY>
+</HTML>
+

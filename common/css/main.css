@@ -1,0 +1,536 @@
+@charset "shift_jis";
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	name : main.css
+
+ : :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ********************************************************************************
+ * #mokuji
+ * ******************************************************************************** */
+
+body#mokuji div#container {
+	background: url(../images/container_bg.jpg) no-repeat top center;
+}
+
+body#mokuji div#content h3 {
+ 	position: absolute;
+	top: 78px;
+	left: 60px;
+	width: 66px;
+	height: 26px;
+}
+body#mokuji div#content ul#mokuji01 {
+ 	position: absolute;
+	top: 171px;
+	left: 60px;
+	width: 162px;
+	height: 224px;
+}
+body#mokuji div#content ul#mokuji01 li,
+body#mokuji div#content ul#mokuji02 li {
+ 	display: inline;
+}
+ body#mokuji div#content ul#mokuji02 {
+ 	position: absolute;
+	top: 171px;
+	left: 222px;
+	width: 170px;
+	height: 228px;
+}
+/* ********************************************************************************
+ * #story
+ * ******************************************************************************** */
+
+body#story div#container {
+	background: url(../../story/images/container_bg.jpg) no-repeat top center;
+}
+body#story div#content div#contentInner h3 {
+	margin-bottom: 16px;
+}
+body#story div#content div#contentInner p#img01 {
+	position: absolute;
+	top: 24px;
+	left: 386px;
+	width: 229px;
+	height: 252px;
+}
+body#story div#content div#contentInner p#img02 {
+	position: absolute;
+	top: 203px;
+	left: 487px;
+	width: 163px;
+	height: 245px;
+}
+/* ********************************************************************************
+ * #character
+ * ******************************************************************************** */
+
+body#characterTop div#container {
+	background: url(../../character/images/container_bg_top.jpg) no-repeat top center;
+}
+body#characterTop div#content div#contentInner {
+	text-align: center;
+}
+body#characterTop div#content div#contentInner h3 {
+	margin-bottom: 13px;
+}
+body#characterKakashi div#container {
+	background: url(../../character/images/container_bg_kakashi.jpg) no-repeat top center;
+}
+body#characterBuriki div#container {
+	background: url(../../character/images/container_bg_buriki.jpg) no-repeat top center;
+}
+body#characterLion div#container {
+	background: url(../../character/images/container_bg_lion.jpg) no-repeat top center;
+}
+body#characterKakashi div#content div#contentInner h3,
+body#characterBuriki div#content div#contentInner h3,
+body#characterLion div#content div#contentInner h3 {
+	margin-bottom: 11px;
+}
+body#characterKakashi div#content div#contentInner p#tokugi,
+body#characterBuriki div#content div#contentInner p#tokugi,
+body#characterLion div#content div#contentInner p#tokugi {
+	margin-bottom: 10px;
+}
+body#characterKakashi div#content div#contentInner p#illust {
+	position: absolute;
+	top:124px;
+	left: 391px;
+	width: 244px;
+	height: 268px;
+}
+body#characterBuriki div#content div#contentInner p#illust {
+	position: absolute;
+	top:35px;
+	left: 430px;
+	width: 156px;
+	height: 396px;
+}
+body#characterLion div#content div#contentInner p#illust {
+	position: absolute;
+	top:62px;
+	left: 389px;
+	width: 268px;
+	height: 381px;
+}
+/* ********************************************************************************
+ * #touch
+ * ******************************************************************************** */
+
+body#touch div#container {
+	background: url(../../touch/images/container_bg.jpg) no-repeat top center;
+}
+body#touch div#content div#contentInner h3 {
+	margin-bottom: 25px;
+}
+body#touch div#content div#contentInner div#touchImg01 {
+	width: 332px;
+	height: 282px;
+	margin: 19px 0 0 -6px;
+}
+body#touch div#content div#contentInner p#touchText02 {
+	position: absolute;
+	top: 62px;
+	right: 36px;
+	width: 230px;
+	height: 19px;
+}
+body#touch div#content div#contentInner p#touchImg02 {
+	position: absolute;
+	top: 96px;
+	right: 14px;
+	width: 275px;
+	height: 214px;
+}
+/* ********************************************************************************
+ * #loveDeai
+ * ******************************************************************************** */
+
+body#loveDeai div#container {
+	background: url(../../love_push/images/container_bg_deai.jpg) no-repeat top center;
+}
+body#loveDeai div#content {
+	text-align: center;
+}
+body#loveDeai div#content h3 {
+	margin: 0 0 12px 0;
+	padding-top: 70px;
+}
+body#loveDeai div#content div#josei {
+	width: 800px;
+	position: relative;
+}
+body#loveDeai div#content div#josei p {
+	float: left;
+	display: inline;
+}
+body#loveDeai div#content div#josei p#josei01{
+	margin: 26px 0 0 40px;
+	width: 156px;
+	height: 192px;
+}
+body#loveDeai div#content div#josei p#josei02{
+	margin: 84px 0 0 -9px;
+	width: 146px;
+	height: 192px;
+}
+body#loveDeai div#content div#josei p#josei03{
+	margin: 5px 0 0 -7px;
+	width: 147px;
+	height: 196px;
+}
+body#loveDeai div#content div#josei p#josei04{
+	margin: 95px 0 0 -8px;
+	width: 141px;
+	height: 192px;
+}
+body#loveDeai div#content p#tingle{
+	position: absolute;
+	top: 347px;
+	left: 278px;
+}
+/* ********************************************************************************
+ * #loveSukui1
+ * ******************************************************************************** */
+
+body#loveSukui1 div#container {
+	background: url(../../love_push/images/container_bg_sukui1.jpg) no-repeat top center;
+}
+body#loveSukui1 div#content div#contentInner h3 {
+	margin-bottom: 25px;
+}
+body#loveSukui1 div#content div#contentInner div#touchImg01 {
+	width: 340px;
+	height: 290px;
+	margin: 18px 0 0 -13px;
+}
+body#loveSukui1 div#content div#contentInner div#rightPage {
+	width: 288px;
+	height: 372px;
+	position: absolute;
+	top: 82px;
+	right: 18px;
+}
+body#loveSukui1 div#content div#contentInner div#rightPage p#tuzuku {
+	width: 69px;
+	height: 37px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* ********************************************************************************
+ * #loveSukui2
+ * ******************************************************************************** */
+body#loveSukui2 div#container {
+	background: url(../../love_push/images/container_bg_sukui2.jpg) no-repeat top center;
+}
+body#loveSukui2 div#content div#contentInner2 h3 {
+	margin: 0 0 27px 98px;
+}
+body#loveSukui2 div#content div#contentInner2 p#text06 {
+	margin: 0 0 0 82px;
+}
+body#loveSukui2 div#content div#contentInner2 p#loveya {
+	position: absolute;
+	top: 60px;
+	left: 315px;
+	width: 173px;
+	height: 280px;
+}
+body#loveSukui2 div#content div#contentInner2 p#loveyaA {
+	position: absolute;
+	top: 0;
+	left: 488px;
+	width: 252px;
+	height: 363px;
+}
+/* ********************************************************************************
+ * #loveJouju1
+ * ******************************************************************************** */
+body#loveJouju1 div#container {
+	background: url(../../love_push/images/container_bg_jouju1.jpg) no-repeat top center;
+}
+body#loveJouju1 div#content div#contentInner2 h3 {
+	margin: 0 0 23px 287px;
+}
+body#loveJouju1 div#content div#contentInner2 p#text07,
+body#loveJouju1 div#content div#contentInner2 p#text08 {
+	margin: 0 0 0 232px;
+}
+body#loveJouju1 div#content div#contentInner2 div#yesNo {
+	margin-left: 311px;
+	width: 147px;
+}
+body#loveJouju1 div#content div#contentInner2 p#josi {
+	position: absolute;
+	top: 218px;
+	left: 0;
+	width: 155px;
+	height: 275px;
+}
+body#loveJouju1 div#content div#contentInner2 p#tingle {
+	position: absolute;
+	top: 142px;
+	right: 0;
+	width: 162px;
+	height: 351px;
+}
+/* ********************************************************************************
+ * #loveJouju2
+ * ******************************************************************************** */
+body#loveJouju2 div#container {
+	background: url(../../love_push/images/container_bg_jouju2.jpg) no-repeat top center;
+}
+body#loveJouju2 div#content div#contentInner2 h3 {
+	margin: 0 0 23px 287px;
+}
+body#loveJouju2 div#content div#contentInner2 p#text07,
+body#loveJouju2 div#content div#contentInner2 p#text08 {
+	margin: 0 0 0 232px;
+}
+body#loveJouju2 div#content div#contentInner2 p#josiBad {
+	position: absolute;
+	top: 132px;
+	left: 0;
+	width: 155px;
+	height: 275px;
+}
+body#loveJouju2 div#content div#contentInner2 p#tingle {
+	position: absolute;
+	top: 142px;
+	right: 0;
+	width: 162px;
+	height: 351px;
+}
+/*body#loveJouju2 div#content p#btnModoru*/ 
+p#btnModoru {
+	position: absolute;
+	bottom: 58px;
+	left: 418px;
+	width: 71px;
+	height: 22px;
+}
+
+/* ********************************************************************************
+ * #loveJouju3
+ * ******************************************************************************** */
+body#loveJouju3 div#container {
+	background: url(../../love_push/images/container_bg_jouju3.jpg) no-repeat top center;
+}
+body#loveJouju3 div#content div#contentInner2 h3 {
+	margin: 0 0 0 287px;
+}
+body#loveJouju3 div#content div#contentInner2 p#bar {
+	margin: 0 0 0 181px;
+}
+body#loveJouju3 div#content div#contentInner2 p#text09 {
+	position: absolute;
+	top: 287px;
+	left: 255px;
+	width: 268px;
+	height: 108px;
+}
+body#loveJouju3 div#content div#contentInner2 p#josiGood {
+	position: absolute;
+	top: 132px;
+	left: 0;
+	width: 155px;
+	height: 275px;
+}
+body#loveJouju3 div#content div#contentInner2 p#tingle {
+	position: absolute;
+	top: 142px;
+	right: 0;
+	width: 162px;
+	height: 351px;
+}
+
+/* ********************************************************************************
+ * #road
+ * ******************************************************************************** */
+body#road div#container {
+	background: url(../../road/images/container_bg_road.jpg) no-repeat top center;
+}
+
+body#road div#content div#contentInner2 {
+	text-align: center;
+}
+
+/* ********************************************************************************
+ * #trip1
+ * ******************************************************************************** */
+body#trip1 div#container {
+	background: url(../../trip/images/container_bg_trip1.jpg) no-repeat top center;
+}
+body#trip1 div#content div#contentInner2 h3 {
+	margin: 0 0 25px 96px;
+}
+body#trip1 div#content div#contentInner2 p#text01,
+body#trip1 div#content div#contentInner2 p#text02,
+body#trip1 div#content div#contentInner2 p#text03 {
+	margin-left: 43px;
+}
+body#trip1 div#content div#contentInner2 p#trip1Tentou {
+	position: absolute;
+	top: 61px;
+	left: 435px;
+	width: 194px;
+	height: 244px;
+}
+body#trip1 div#content div#contentInner2 p#trip1Tingle {
+	position: absolute;
+	top: 142px;
+	right: 0;
+	width: 139px;
+	height: 351px;
+}
+body#trip1 div#content div#contentInner2 p#text04 {
+	position: absolute;
+	top: 325px;
+	left: 435px;
+	width: 266px;
+	height: 55px;
+}
+body#trip1 div#content div#contentInner2 p#text05 {
+	position: absolute;
+	top: 423px;
+	left: 592px;
+	width: 69px;
+	height: 26px;
+}
+body#trip1 div#content div#contentInner2 p#text09 {
+	position: absolute;
+	top: 306px;
+	left: 252px;
+	width: 202px;
+	height: 25px;
+}
+body#trip1 div#content div#contentInner2 div#yesNo {
+	position: absolute;
+	top: 348px;
+	left: 311px;
+	width: 147px;
+	height: 76px;
+}
+/* ********************************************************************************
+ * #nakanaori2
+ * ******************************************************************************** */
+body#nakanaori2 div#container {
+	background: url(../../trip/images/container_bg_nakanaori2.jpg) no-repeat top center;
+}
+body#nakanaori2 div#content div#contentInner2 p#trip1Tentou {
+	position: absolute;
+	top: 61px;
+	left: 435px;
+	width: 194px;
+	height: 244px;
+}
+body#nakanaori2 div#content div#contentInner2 p#trip1Tingle {
+	position: absolute;
+	top: 142px;
+	right: 0;
+	width: 195px;
+	height: 351px;
+}
+/* ********************************************************************************
+ * #nakanaori3
+ * ******************************************************************************** */
+body#nakanaori3 div#container {
+	background: url(../../trip/images/container_bg_nakanaori3.jpg) no-repeat top center;
+}
+body#nakanaori3 div#content div#contentInner2 {
+	text-align: center;
+}
+/* ********************************************************************************
+ * #nakanaori4
+ * ******************************************************************************** */
+body#nakanaori4 div#container {
+	background: url(../../trip/images/container_bg_nakanaori4.jpg) no-repeat top center;
+}
+body#nakanaori4 div#content div#contentInner2 h3 {
+	margin: 0 0 25px 96px;
+}
+body#nakanaori4 div#content div#contentInner2 p#text01,
+body#nakanaori4 div#content div#contentInner2 p#text02 {
+	margin-left: 43px;
+}
+body#nakanaori4 div#content div#contentInner2 p#text03 {
+	position: absolute;
+	top: 83px;
+	left: 427px;
+	width: 295px;
+	height: 197px;
+}
+body#nakanaori4 div#content div#contentInner2 p#text04 {
+	position: absolute;
+	top: 319px;
+	left: 440px;
+	width: 261px;
+	height: 25px;
+}
+body#nakanaori4 div#content div#contentInner2 p#text05 {
+	position: absolute;
+	top: 356px;
+	left: 545px;
+	width: 56px;
+	height: 76px;
+}
+/* ********************************************************************************
+ * #nakanaori5
+ * ******************************************************************************** */
+body#nakanaori5 div#container {
+	background: url(../../trip/images/container_bg_nakanaori5.jpg) no-repeat top center;
+}
+body#nakanaori5 div#content div#contentInner2 h3 {
+	margin: 0 0 46px 96px;
+}
+body#nakanaori5 div#content div#contentInner2 p#text01 {
+	margin-left: 43px;
+}
+body#nakanaori5 div#content div#contentInner2 p#text02 {
+	margin: 63px 0 0 651px;
+}
+/* ********************************************************************************
+ * #fusen
+ * ******************************************************************************** */
+body#fusen div#container {
+	background: url(../../trip/images/container_bg_fusen.jpg) no-repeat top center;
+}
+body#fusen div#content div#contentInner2 {
+	text-align: center;
+}
+
+/* ********************************************************************************
+ * #shiren
+ * ******************************************************************************** */
+body#shiren div#container {
+	background: url(../../shiren/images/container_bg.jpg) no-repeat top center;
+}
+body#shiren div#container p#shiren01 {
+	margin-top: 46px;
+}
+body#shiren div#container p#shiren02 {
+	position: absolute;
+	top: 87px;
+	right: 0;
+}
+body#shiren div#container p#shiren03 {
+	position: absolute;
+	bottom: 69px;
+	right: 0;
+}
+/* ********************************************************************************
+ * #city
+ * ******************************************************************************** */
+body#city div#container {
+	background: url(../../city/images/container_bg.jpg) no-repeat top center;
+}
+body#city div#container p#oshimai {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

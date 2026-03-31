@@ -2,55 +2,31 @@
 <html lang="ja">
 <head>
 <meta charset="shift_jis">
-<meta http-equiv="content-style-type" content="text/css">
-<meta http-equiv="content-script-type" content="text/javascript">
-<meta http-equiv="imagetoolbar" content="no">
 <title>いろづきTV</title>
-<link href="common.css" rel="stylesheet" type="text/css">
 <style>
     body { margin: 0; background: #000; text-align: center; }
-    #flashContent { width: 512px; height: 512px; margin: 0 auto; position: relative; }
-    /* Ruffle 容器样式 */
+    #flashContent { width: 512px; height: 512px; margin: 0 auto; }
     ruffle-player { width: 100%; height: 100%; }
 </style>
 </head>
 <body>
 <div id="flashContent">
-    <!-- 备用图片：当 Ruffle 加载失败或未支持时显示 -->
-    <img src="noscript.jpg" alt="このページは、Ruffle (Flash エミュレータ) を利用しています。最新のブラウザでご覧ください。" border="0" usemap="#Map">
-    <map name="Map">
-        <area shape="rect" coords="166,213,353,266" href="https://ruffle.rs/" target="_blank">
-    </map>
+    <!-- 使用 embed 标签直接指向 SWF 文件，Ruffle 会自动替换 -->
+    <embed src="swf/index.swf" width="512" height="512"
+           type="application/x-shockwave-flash"
+           pluginspage="https://ruffle.rs/">
 </div>
 
-<!-- 引入 Ruffle 核心脚本（假设 ruffle 文件夹在 yousei 目录下） -->
+<!-- 引入 Ruffle 脚本（确保路径正确） -->
 <script src="ruffle/ruffle.js"></script>
 <script>
+    // 配置 Ruffle（可选）
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-        autoplay: "on",          // 自动播放
-        unmuteOverlay: "hidden", // 隐藏静音提示
-        contextMenu: "off",      // 关闭右键菜单
-        preloader: true,         // 显示加载进度
-        splashScreen: false      // 不显示启动画面
+        autoplay: "on",
+        unmuteOverlay: "hidden",
+        splashScreen: false
     };
-
-    // 等待 DOM 加载完成后嵌入 SWF
-    window.addEventListener("DOMContentLoaded", function() {
-        const container = document.getElementById("flashContent");
-        if (container) {
-            // 清除原有的备用图片，避免遮挡
-            container.innerHTML = "";
-            // 创建 Ruffle 播放器实例
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            player.style.width = "512px";
-            player.style.height = "512px";
-            // 加载 SWF 文件（路径相对于当前 HTML）
-            player.load("swf/index.swf");
-            container.appendChild(player);
-        }
-    });
 </script>
 </body>
 </html>
